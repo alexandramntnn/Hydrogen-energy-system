@@ -91,23 +91,6 @@ def main():
     # simulate and show results
     neighborhood.simulate()
     neighborhood.report()
-    # initial investment estimate
-    estimate_investment()
-
-def estimate_investment():
-    print("\nInitial investment:")
-    # battery
-    battery_capacity_kwh = 80.0
-    cost_low_batt = battery_capacity_kwh * 200
-    cost_high_batt= battery_capacity_kwh * 400
-    print(f"Battery: ${cost_low_batt:,.0f} - ${cost_high_batt:,.0f}")
-
-    # electrolyzer
-    electrolyzer_kw = 12
-    cost_low_elec = electrolyzer_kw * 700
-    cost_high_elec= electrolyzer_kw * 1200
-    print(f"Electrolyzer: ${cost_low_elec:,.0f} - ${cost_high_elec:,.0f}")
-
 
 if __name__ == "__main__":
     main()
